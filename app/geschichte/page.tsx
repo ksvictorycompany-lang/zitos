@@ -224,7 +224,7 @@ export default function GeschichtePage() {
             </p>
           </div>
           <div className="flex justify-center overflow-x-hidden py-6">
-            <div className="w-full max-w-[640px] px-4">
+            <div className="w-full max-w-[853px] px-4">
               <CardStack cards={geschichteCards} autoPlay={true} interval={4500} />
             </div>
           </div>

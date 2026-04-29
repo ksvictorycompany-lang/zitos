@@ -86,7 +86,7 @@ export default function GaleriePage() {
 
           {/* Card stack centered */}
           <div className="flex justify-center overflow-x-hidden py-8">
-            <div className="w-full max-w-[640px] px-4">
+            <div className="w-full max-w-[853px] px-4">
               <CardStack cards={allCards} autoPlay={true} interval={4000} />
             </div>
           </div>

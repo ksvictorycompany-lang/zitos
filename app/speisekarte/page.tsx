@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import MenuCards from "@/components/MenuCards";
 
 export const metadata = {
   title: "Speisekarte — Zitos Little Italy Mannheim",
@@ -19,90 +19,13 @@ export default function SpeisakartePage() {
         subtitle="Authentische italienische Gourmetküche — frisch zubereitet mit ausgewählten Zutaten und mediterraner Leidenschaft."
       />
 
-      {/* Menu Cards */}
+      {/* Menu */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Speisekarte */}
-            <div className="group">
-              <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg">
-                <Image
-                  src="https://cdn.website.dish.co/media/86/b6/8222905/Speisekarte.jpg"
-                  alt="Zitos Speisekarte"
-                  fill
-                  className="object-cover group-hover:scale-102 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <span className="inline-block bg-gold text-ink text-xs px-3 py-1 rounded-full font-medium tracking-wide mb-3">
-                    Speisen
-                  </span>
-                  <h2 className="font-display text-4xl italic text-cream font-light">
-                    Speisekarte
-                  </h2>
-                  <p className="text-cream/70 text-sm mt-2">
-                    Antipasti · Pasta · Pizza · Hauptgerichte · Desserts
-                  </p>
-                </div>
-              </div>
-              <div className="mt-4 p-6 bg-surface rounded-xl border border-cream-dark">
-                <p className="text-muted text-sm leading-relaxed">
-                  Von hausgemachter Pasta bis hin zu preisgekrönten
-                  Fleischgerichten — unsere Küche verbindet traditionelle
-                  Rezepte mit modernen Akzenten. Glutenfreie und vegane
-                  Optionen auf Anfrage.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {["Antipasti", "Pasta", "Pizza", "Hauptgerichte", "Desserts", "Glutenfrei", "Vegan"].map((cat) => (
-                    <span key={cat} className="text-xs border border-aegean/15 text-aegean px-3 py-1 rounded-full">
-                      {cat}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Getränkekarte */}
-            <div className="group">
-              <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg">
-                <Image
-                  src="https://cdn.website.dish.co/media/21/df/8966280/Getranke.jpg"
-                  alt="Zitos Getränkekarte"
-                  fill
-                  className="object-cover group-hover:scale-102 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <span className="inline-block bg-terracotta text-cream text-xs px-3 py-1 rounded-full font-medium tracking-wide mb-3">
-                    Getränke
-                  </span>
-                  <h2 className="font-display text-4xl italic text-cream font-light">
-                    Getränkekarte
-                  </h2>
-                  <p className="text-cream/70 text-sm mt-2">
-                    Weine · Cocktails · Softdrinks · Heiße Getränke
-                  </p>
-                </div>
-              </div>
-              <div className="mt-4 p-6 bg-surface rounded-xl border border-cream-dark">
-                <p className="text-muted text-sm leading-relaxed">
-                  Erfrischende Getränke und erlesene Weine ergänzen perfekt
-                  Ihre Mahlzeit. Wählen Sie aus unserer sorgfältig
-                  zusammengestellten Getränkekarte.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {["Rotweine", "Weißweine", "Cocktails", "Aperitifs", "Softdrinks", "Kaffee"].map((cat) => (
-                    <span key={cat} className="text-xs border border-terracotta/20 text-terracotta px-3 py-1 rounded-full">
-                      {cat}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+          <MenuCards />
 
           {/* Info banner */}
-          <div className="mt-12 p-8 bg-aegean/5 border border-aegean/10 rounded-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="mt-16 p-8 bg-aegean/5 border border-aegean/10 rounded-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <p className="font-display text-2xl italic text-aegean font-light">
                 Fragen zur Speisekarte?

@@ -51,7 +51,7 @@ export default function CardStack({
     function update() {
       if (!containerRef.current) return;
       const w = containerRef.current.offsetWidth;
-      setCardW(Math.min(520, Math.max(260, w - 32)));
+      setCardW(Math.min(693, Math.max(347, w - 32)));
     }
     update();
     const ro = new ResizeObserver(update);

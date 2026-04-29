@@ -136,10 +136,9 @@ export default function Navbar() {
                 key={href}
                 href={href}
                 className={`flex items-center px-3 py-3.5 rounded-lg text-[15px] font-medium transition-colors ${
-                  active
-                    ? "bg-gold/15 text-gold"
-                    : "text-cream/80 hover:text-cream hover:bg-white/8"
+                  active ? "bg-gold/15" : "hover:bg-white/8"
                 }`}
+                style={{ color: active ? "#C8A96A" : "rgba(200,169,106,0.82)" }}
               >
                 {label}
               </Link>
@@ -147,7 +146,8 @@ export default function Navbar() {
           })}
           <a
             href="tel:+4962118033444"
-            className="flex items-center gap-2.5 px-3 py-3.5 text-gold font-medium text-[15px]"
+            className="flex items-center gap-2.5 px-3 py-3.5 font-medium text-[15px]"
+            style={{ color: "#C8A96A" }}
           >
             <Phone className="w-4 h-4" />
             +49 621 18033444
