@@ -106,14 +106,13 @@ export default function Home() {
             </Link>
             <Link
               href="/speisekarte"
-              className="border border-cream/40 text-cream px-7 sm:px-8 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-cream/10 transition-all duration-200"
+              className="bg-gold text-ink px-7 sm:px-8 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-gold/90 transition-all duration-200 hover:shadow-lg"
             >
               Speisekarte ansehen
             </Link>
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-cream/40">
-          <span className="text-xs tracking-widest uppercase">Entdecken</span>
           <div className="w-px h-10 bg-gradient-to-b from-cream/40 to-transparent" />
         </div>
       </section>
